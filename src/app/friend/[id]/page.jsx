@@ -1,7 +1,8 @@
 import React from 'react';
 import friendsData from "../../../../public/data.json";
 import Image from "next/image";
-import { FiBell, FiArchive, FiTrash2, FiPhone, FiMessageSquare, FiVideo } from "react-icons/fi";
+import { FiBell, FiArchive, FiTrash2 } from "react-icons/fi";
+import QuickCheckIn from "../../../Component/FriendDetail/QuickCheckIn";
 
 const formatStatus = (status) => {
     if (!status) return '';
@@ -103,23 +104,7 @@ export default async function FriendDetail({ params }) {
                         </p>
                     </div>
 
-                    <div className="bg-white rounded-xl shadow-sm border border-gray-100 p-6">
-                        <h3 className="text-lg font-bold text-[#1e5631] mb-4">Quick Check-In</h3>
-                        <div className="grid grid-cols-3 gap-4">
-                            <button className="flex flex-col items-center justify-center gap-2 py-6 border border-gray-100 rounded-lg hover:bg-gray-50 transition-colors text-slate-700">
-                                <FiPhone className="text-2xl font-semibold" />
-                                <span className="text-sm font-semibold">Call</span>
-                            </button>
-                            <button className="flex flex-col items-center justify-center gap-2 py-6 border border-gray-100 rounded-lg hover:bg-gray-50 transition-colors text-slate-700">
-                                <FiMessageSquare className="text-2xl font-semibold" />
-                                <span className="text-sm font-semibold">Text</span>
-                            </button>
-                            <button className="flex flex-col items-center justify-center gap-2 py-6 border border-gray-100 rounded-lg hover:bg-gray-50 transition-colors text-slate-700">
-                                <FiVideo className="text-2xl font-semibold" />
-                                <span className="text-sm font-semibold">Video</span>
-                            </button>
-                        </div>
-                    </div>
+                    <QuickCheckIn friend={friend} />
                 </div>
                 
             </div>
