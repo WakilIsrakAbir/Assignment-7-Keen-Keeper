@@ -1,12 +1,10 @@
 import React from "react";
-import Navbar from "../shared/Navbar";
-import Footer from "../shared/Footer";
 
-const HomePage = () => {
+const Hero = () => {
     return (
-        <div className="min-h-screen bg-[#f8fafc]">
+        <div className="bg-[#f8fafc]">
             
-            <div className="max-w-4xl mx-auto px-4 py-16 flex flex-col items-center">
+            <div className="max-w-6xl mx-auto px-4 py-16 flex flex-col items-center">
                 
                 <div className="text-center mb-10 mt-6">
                     <h1 className="text-[32px] md:text-[38px] font-bold text-[#1e293b] mb-4 tracking-tight leading-tight">
@@ -49,4 +47,4 @@ const HomePage = () => {
     );
 };
 
-export default HomePage;
+export default Hero;

@@ -1,9 +1,11 @@
-import HomePage from "../Component/HomePage/Hero";
+import Friends from "@/Component/HomePage/Friends";
+import Hero from "@/Component/HomePage/Hero";
 
 export default function Home() {
   return(
     <div>
-      <HomePage/>
+      <Hero></Hero>
+      <Friends></Friends>
     </div>
   )
 }
