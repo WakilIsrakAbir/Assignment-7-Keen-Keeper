@@ -1,11 +1,11 @@
 import React from "react";
-import Navbar from "../Component/Navbar";
-import Footer from "../Component/Footer";
+import Navbar from "../../Component/Navbar";
+import Footer from "../../Component/Footer";
 
 const HomePage = () => {
     return (
         <div className="min-h-screen bg-[#f8fafc]">
-            <Navbar/>
+            
             <div className="max-w-4xl mx-auto px-4 py-16 flex flex-col items-center">
                 
                 <div className="text-center mb-10 mt-6">
@@ -45,7 +45,6 @@ const HomePage = () => {
                 </div>
 
             </div>
-            <Footer></Footer>
         </div>
     );
 };
